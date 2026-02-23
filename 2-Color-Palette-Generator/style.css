@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Kufam:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #6fc4de, rgb(222, 107, 218));
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: #eff;
+    justify-content: center;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(153, 54, 206);
+    width: 50%;
+    height: 3px;
+    border-radius: 2px;
+}
+
+#generate-btn {
+    background: linear-gradient(45deg, #55ecec, rgb(112, 32, 108));
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.palette-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    justify-content: center;
+    width: 100%;
+}
+
+.color-box {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.color {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.hex-value {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.copy-btn {
+    cursor: pointer;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .palette-container {
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}

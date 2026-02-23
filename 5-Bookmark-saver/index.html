@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Bookmark Saver</h1>
+            <form id="bookmark-form">
+                <input type="text" id="bookmark-name" placeholder="Bookmark Name" required>
+                <input type="url" id="bookmark-url" placeholder="Bookmark URL" required>
+                <button type="submit" id="add-bookmark" class="btn-add">Add Bookmark</button>
+            </form>
+
+            <ul id="bookmarks-list" class="bookmarks-list">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

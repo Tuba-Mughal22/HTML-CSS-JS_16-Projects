@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Project Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 30px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        header p {
+            color: #e0e0e0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.9);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        @media(max-width: 480px){
+            header h1 {
+                font-size: 24px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Frontend Project Portfolio</h1>
+        <p>Collection of 8 responsive web development projects</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card"><a href="1-Quiz-Game/index.html">Project 1</a></div>
+            <div class="card"><a href="2-Color-Palette-Generator/Index.html">Project 2</a></div>
+            <div class="card"><a href="3-Drag-and-Drop/index.html">Project 3</a></div>
+            <div class="card"><a href="4-Expense-Tracker/index.html">Project 4</a></div>
+            <div class="card"><a href="5-Bookmark-saver/index.html">Project 5</a></div>
+            <div class="card"><a href="6-Form-Validator/index.html">Project 6</a></div>
+            <div class="card"><a href="7-Password-Generator/index.html">Project 7</a></div>
+            <div class="card"><a href="8-Todo-App/index.html">Project 8</a></div>
+            <div class="card"><a href="9-Contact-Form/index.html">Project 9</a></div>
+            <div class="card"><a href="10-Price-Cards/index.html">Project 10</a></div>
+            <div class="card"><a href="11-Team-Members/index.html">Project 11</a></div>
+            <div class="card"><a href="12-Recipe-Finder/index.html">Project 12</a></div>
+            <div class="card"><a href="13-Currency-Convertor/index.html">Project 13</a></div>
+            <div class="card"><a href="14-Github-finder/index.html">Project 14</a></div>
+            <div class="card"><a href="15-Custom-404-Page/index.html">Project 15</a></div>
+            <div class="card"><a href="16-News-letter-signup/index.html">Project 16</a></div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
